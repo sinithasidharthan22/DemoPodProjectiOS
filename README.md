@@ -1,0 +1,29 @@
+# DemoPodProject
+
+[![CI Status](https://img.shields.io/travis/35226835/DemoPodProject.svg?style=flat)](https://travis-ci.org/35226835/DemoPodProject)
+[![Version](https://img.shields.io/cocoapods/v/DemoPodProject.svg?style=flat)](https://cocoapods.org/pods/DemoPodProject)
+[![License](https://img.shields.io/cocoapods/l/DemoPodProject.svg?style=flat)](https://cocoapods.org/pods/DemoPodProject)
+[![Platform](https://img.shields.io/cocoapods/p/DemoPodProject.svg?style=flat)](https://cocoapods.org/pods/DemoPodProject)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+DemoPodProject is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'DemoPodProject'
+```
+
+## Author
+
+35226835, firoze@gizmeon.com
+
+## License
+
+DemoPodProject is available under the MIT license. See the LICENSE file for more info.
