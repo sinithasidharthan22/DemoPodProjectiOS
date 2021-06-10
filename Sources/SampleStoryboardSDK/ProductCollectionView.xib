@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="dX0-gx-sUt" customClass="ProductCollectionViewCell" customModule="DemoPodProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kxh-9R-nOZ">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoondockLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SXg-Eh-lV5" customClass="CustomImageView" customModule="DemoPodProject">
+                        <rect key="frame" x="3" y="3" width="60" height="175"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="N6H-k8-bAC"/>
+                            <constraint firstAttribute="width" constant="60" id="w1x-WT-av4"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHF-Fr-5XP">
+                        <rect key="frame" x="67" y="3" width="199" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.89909736259999995" green="0.098672933510000005" blue="0.067869173059999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair cream mamerath  more product" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOy-9w-8ON">
+                        <rect key="frame" x="67" y="26" width="199" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 125" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTT-fF-UPX">
+                        <rect key="frame" x="67" y="80.5" width="101" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOP-5D-G1r">
+                        <rect key="frame" x="184" y="80.5" width="66" height="27"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="oYg-hc-nJX"/>
+                            <constraint firstAttribute="height" constant="27" id="pP5-KC-K2c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="  Buy Now  ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bOy-9w-8ON" firstAttribute="trailing" secondItem="KHF-Fr-5XP" secondAttribute="trailing" id="8OU-zv-ENh"/>
+                    <constraint firstItem="SXg-Eh-lV5" firstAttribute="leading" secondItem="kxh-9R-nOZ" secondAttribute="leading" constant="3" id="BH3-Ws-aEm"/>
+                    <constraint firstItem="SXg-Eh-lV5" firstAttribute="centerY" secondItem="kxh-9R-nOZ" secondAttribute="centerY" id="Bk1-sE-DKT"/>
+                    <constraint firstItem="bOy-9w-8ON" firstAttribute="leading" secondItem="KHF-Fr-5XP" secondAttribute="leading" id="SD8-TQ-ZzE"/>
+                    <constraint firstItem="RTT-fF-UPX" firstAttribute="top" secondItem="bOy-9w-8ON" secondAttribute="bottom" constant="16" id="UC2-Dr-7aH"/>
+                    <constraint firstItem="RTT-fF-UPX" firstAttribute="leading" secondItem="bOy-9w-8ON" secondAttribute="leading" id="YTI-ga-GQH"/>
+                    <constraint firstItem="uOP-5D-G1r" firstAttribute="top" secondItem="bOy-9w-8ON" secondAttribute="bottom" constant="16" id="egW-TO-23U"/>
+                    <constraint firstAttribute="trailing" secondItem="KHF-Fr-5XP" secondAttribute="trailing" id="kZi-Xb-NbH"/>
+                    <constraint firstItem="RTT-fF-UPX" firstAttribute="trailing" secondItem="uOP-5D-G1r" secondAttribute="leading" constant="-16" id="pDV-lh-vtr"/>
+                    <constraint firstAttribute="trailing" secondItem="uOP-5D-G1r" secondAttribute="trailing" constant="16" id="puS-EU-lb9"/>
+                    <constraint firstItem="bOy-9w-8ON" firstAttribute="top" secondItem="KHF-Fr-5XP" secondAttribute="bottom" constant="6" id="q7G-sZ-n9b"/>
+                    <constraint firstItem="KHF-Fr-5XP" firstAttribute="leading" secondItem="SXg-Eh-lV5" secondAttribute="trailing" constant="4" id="xe2-JN-DqH"/>
+                    <constraint firstItem="KHF-Fr-5XP" firstAttribute="top" secondItem="kxh-9R-nOZ" secondAttribute="top" constant="3" id="zlv-F9-fSD"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="266" height="181"/>
+            <connections>
+                <outlet property="headerLabel" destination="KHF-Fr-5XP" id="SGT-Ie-zko"/>
+                <outlet property="productImage" destination="SXg-Eh-lV5" id="Hy6-Uz-dk9"/>
+                <outlet property="productImageHeight" destination="N6H-k8-bAC" id="YAW-gv-fT7"/>
+                <outlet property="productNameLAbel" destination="bOy-9w-8ON" id="uDD-e1-eOo"/>
+                <outlet property="productPriceLAbel" destination="RTT-fF-UPX" id="E4f-ea-KfT"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="-63"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BoondockLogo" width="360" height="360"/>
+    </resources>
+</document>

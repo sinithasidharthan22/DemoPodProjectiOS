@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import DemoPodProject
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let storyboard = UIStoryboard(name: "HomeStoryBoard", bundle: Bundle(for: HomeViewController.self))
+        if let vc = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController{
+       
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,3 +29,19 @@ class ViewController: UIViewController {
 
 }
 
+extension UIApplication {
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
+}

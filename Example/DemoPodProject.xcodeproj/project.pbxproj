@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* DemoPodProject_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoPodProject_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		67F718D02B01639480AC88C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		67F718D02B01639480AC88C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		784FDD415096D11B04A691B1 /* Pods_DemoPodProject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoPodProject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BBE908F03E23F8AD4BD2233 /* DemoPodProject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DemoPodProject.podspec; path = ../DemoPodProject.podspec; sourceTree = "<group>"; };
+		8BBE908F03E23F8AD4BD2233 /* DemoPodProject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DemoPodProject.podspec; path = ../DemoPodProject.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC3781038E5033E07D52C99C /* Pods-DemoPodProject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPodProject_Example.release.xcconfig"; path = "Target Support Files/Pods-DemoPodProject_Example/Pods-DemoPodProject_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C8F2545F9A8B3BCC952A17F1 /* Pods-DemoPodProject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPodProject_Example.debug.xcconfig"; path = "Target Support Files/Pods-DemoPodProject_Example/Pods-DemoPodProject_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C9C296C1596F1CFD235745E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C9C296C1596F1CFD235745E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				1759DB03E944B45466DE379B /* Pods-DemoPodProject_Tests.debug.xcconfig */,
 				31DF85012031386DF8712EE7 /* Pods-DemoPodProject_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3JT384Z8S3;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3JT384Z8S3;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,11 +481,15 @@
 			baseConfigurationReference = C8F2545F9A8B3BCC952A17F1 /* Pods-DemoPodProject_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT384Z8S3;
 				INFOPLIST_FILE = DemoPodProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,11 +500,15 @@
 			baseConfigurationReference = BC3781038E5033E07D52C99C /* Pods-DemoPodProject_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT384Z8S3;
 				INFOPLIST_FILE = DemoPodProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -507,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1759DB03E944B45466DE379B /* Pods-DemoPodProject_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3JT384Z8S3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31DF85012031386DF8712EE7 /* Pods-DemoPodProject_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3JT384Z8S3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

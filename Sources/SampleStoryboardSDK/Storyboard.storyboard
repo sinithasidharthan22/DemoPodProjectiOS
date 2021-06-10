@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QK8-1k-VnQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample StoryboardSDK-->
+        <scene sceneID="bNd-1E-jgh">
+            <objects>
+                <viewController storyboardIdentifier="SampleVC" id="QK8-1k-VnQ" customClass="SampleStoryboardSDK" customModule="SampleStoryboardSDK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXm-Q6-3WK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoondockLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-Yc-wxG">
+                                <rect key="frame" x="75" y="144" width="240" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="Hag-g3-8zx"/>
+                                    <constraint firstAttribute="width" constant="240" id="OPf-jt-LTv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-zb-BSL">
+                                <rect key="frame" x="0.0" y="291" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hOG-qT-TZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RvM-m0-mmR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RvM-m0-mmR" firstAttribute="trailing" secondItem="YHQ-zb-BSL" secondAttribute="trailing" id="RUT-lH-dp4"/>
+                            <constraint firstItem="RvM-m0-mmR" firstAttribute="bottom" secondItem="YHQ-zb-BSL" secondAttribute="bottom" constant="521" id="blR-6E-GBs"/>
+                            <constraint firstItem="cl3-Yc-wxG" firstAttribute="top" secondItem="RvM-m0-mmR" secondAttribute="top" constant="100" id="hWY-Z9-7IP"/>
+                            <constraint firstItem="YHQ-zb-BSL" firstAttribute="leading" secondItem="RvM-m0-mmR" secondAttribute="leading" id="jIh-wD-6xX"/>
+                            <constraint firstItem="YHQ-zb-BSL" firstAttribute="top" secondItem="cl3-Yc-wxG" secondAttribute="bottom" constant="30" id="k0r-gg-4Uu"/>
+                            <constraint firstItem="cl3-Yc-wxG" firstAttribute="leading" secondItem="RvM-m0-mmR" secondAttribute="leading" constant="75" id="vTK-da-3vu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Imageview" destination="cl3-Yc-wxG" id="ir2-r5-DLy"/>
+                        <outlet property="label" destination="YHQ-zb-BSL" id="MTl-pX-GE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDT-SN-0NS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BoondockLogo" width="360" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
